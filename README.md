@@ -18,4 +18,4 @@ Contact — Contact form + direct email/phone
 #### 🛠️ Built With
 HTML · CSS · JavaScript
 #### 📬 Contact
-📧 praaj99341@gmail.com | 📱 +91 9011366153
+📧 Raj.prashant19@vit.edu | 📱 +91 9011366153
