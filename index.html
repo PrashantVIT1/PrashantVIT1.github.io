@@ -1,0 +1,261 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portfolio Website</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="https://kit.fontawesome.com/6ef1d6f33e.js" crossorigin="anonymous"></script>
+</head>
+
+<body>
+    <div id="header">
+        <div class="container">
+            <nav>
+                <img src="images/logo.png" class="logo">
+                <ul id="sidemenu">
+                    <li><a href="#header">Home</a></li>
+                    <li><a href="#about">About</a></li>
+                    <li><a href="#service">Services</a></li>
+                    <li><a href="#portfolio">Portfolio</a></li>
+                    <li><a href="#contact">Contact</a></li>
+                    <i class="fa-solid fa-xmark" onclick="closemenu()"></i>
+                </ul>
+                <i class="fa-solid fa-bars" onclick="openmenu()"></i>
+            </nav>
+            <div class="header-text">
+                <p>I <span><span class="auto-type"></span></span></p>
+                <h1>Hi, I'm <span>Prashant</span><br>Raj From India</h1>
+            </div>
+
+        </div>
+    </div>
+    <!-- ----------------------------about------------------- -->
+    <div id="about">
+        <div class="container">
+            <div class="row">
+
+                <div class="about-col-1">
+                    <div class="square">
+                        <span></span>
+                        <span></span>
+                        <span></span>
+                        <div class="content">
+                            <img src="images/background.png">
+                        </div>
+                    </div>
+                </div>
+                <div class="about-col-2">
+                    <h1 class="sub-title">About Me</h1>
+                    <p>Hi there! My name is Prashant Raj and I am a final year BTech student at Vishwakarma Institute of
+                        Technology Pune. Throughout my time at Vishwakarma Institute of Technology, I have developed a
+                        strong foundation in technical skills as in skill section and have had the opportunity to work
+                        on a number of exciting projects, including Projects in the work section.</p>
+
+                    <p> I am passionate about using technology to solve real-world problems and am always looking for
+                        ways to learn and improve my skills. In my free time, I enjoy coding, playing chess and listning
+                        music and was an active member of the ISA, Ekasutram and TRF clubs at Vishwakarma Institute of
+                        Technology.</p>
+
+                    <p> I am excited to begin my professional career and am eager to apply my skills and knowledge in a
+                        practical setting. Thank you for visiting my portfolio website and considering me for any
+                        potential opportunities. I look forward to the chance to work with you and make a positive
+                        impact.</p>
+                    <div class="tab-titles">
+                        <p class="tab-links active-link" onclick="opentab('skills')">Skills</p>
+                        <p class="tab-links" onclick="opentab('experience')">Experience</p>
+                        <p class="tab-links" onclick="opentab('education')">Education</p>
+                    </div>
+                    <div class="tab-contents active-tab" id="skills">
+                        <ul>
+                            <li><span>C++/Python</span><br>Primary programming languages</li>
+                            <li><span>Web Development</span><br>Frontend development</li>
+                            <li><span>Data Visulization</span><br>Data Representation in terms of graphs</li>
+                        </ul>
+                    </div>
+                    <div class="tab-contents" id="experience">
+                        <ul>
+                            <li><span>2021 - 2022</span><br>Web-Master ISA</li>
+                            <li><span>2020 - 2021</span><br>Technical Coordinator at Ekasutram</li>
+                            <li><span>2019 - 2020</span><br>Technical Coordinator at The Robotics Forum</li>
+                        </ul>
+                    </div>
+
+                    <div class="tab-contents" id="education">
+                        <ul>
+                            <li><span>2019 - 2023</span><br>Vishwakarma Institute of Technology, Pune</li>
+                            <li><span>2016 - 2018</span><br>Sri Chaitanya Vidya Niketan, Visakhapatnam(AP)</li>
+                            <li><span>2014 - 2016</span><br>RPS Residential School, Patna</li>
+                        </ul>
+                    </div>
+
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- ---------------------------- services ------------------- -->
+    <div id="service">
+        <div class="container">
+            <h1 class="sub-title">My Services</h1>
+            <div class="services-list">
+                <div>
+                    <i class="fa-brands fa-internet-explorer"></i>
+                    <h2>Web Development</h2>
+                    <p> Interactive website development with decent user interface and eye catching Design.</p>
+                    <a href="#">Learn more</a>
+                </div>
+                <div>
+                    <i class="fa-brands fa-wpexplorer"></i>
+                    <h2>Computer Vision</h2>
+                    <p> Providing decision making ability to machines on based on images</p>
+                    <a href="#">Learn more</a>
+                </div>
+                <div>
+                    <i class="fa-brands fa-codepen"></i>
+                    <h2>C++/Python development</h2>
+                    <p>Good understandable algorithms development with proper inspection and analysis</p>
+                    <a href="#">Learn more</a>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- -----------------------portfolio----------- -->
+    <div id="portfolio">
+        <div class="container">
+            <h1 class="sub-title">My Work</h1>
+            <div class="work-list">
+                <div class="work">
+                    <img src="images/work-1.png" alt="">
+                    <div class="layer">
+                        <h3>MovieDB Web App</h3>
+                        <p>In the project an MovieDB API has been used to get the information. The movies can be
+                            searched and there details are
+                            provided on the page.</p>
+                        <a href="https://github.com/PrashantVIT1/MovieDB-API-based-web-Application"><i
+                                class="fa-solid fa-code"></i></a>
+                    </div>
+                </div>
+                <div class="work">
+                    <img src="images/work-2.png" alt="">
+                    <div class="layer">
+                        <h3>Employee Database Management System</h3>
+                        <p>Web application for maintaining employee data and attribute like designation, name and salary
+                            with a decent UI.</p>
+                        <a href="https://github.com/PrashantVIT1/Employ_management_system"><i
+                                class="fa-solid fa-arrow-up-right-from-square"></i></a>
+                    </div>
+                </div>
+                <div class="work">
+                    <img src="images/work-3.png" alt="">
+                    <div class="layer">
+                        <h3>Smart Carpark System</h3>
+                        <p>This project can helps to manage the problem of parking in Urban area and also it can help in
+                            managing parking near railway
+                            stations.</p>
+                        <a href="https://github.com/PrashantVIT1/IOT-car-park-system"><i
+                                class="fa-solid fa-wifi"></i></a>
+                    </div>
+                </div>
+            </div>
+            <a href="#" class="btn">See more</a>
+        </div>
+    </div>
+    <!-- ---------------------contact--------------- -->
+    <div id="contact">
+        <div class="container">
+            <div class="row">
+                <div class="contact-left">
+                    <h1 class="sub-title">Contact Me</h1>
+                    <p><i class="fa-solid fa-paper-plane"></i>praaj99341@gmail.com</p>
+                    <p><i class="fa-solid fa-phone"></i>7479947107</p>
+                    <div class="social-icons">
+                        <a href="https://www.instagram.com/rajprashant_17/"><i class="fa-brands fa-instagram"></i></a>
+                        <a href="https://github.com/PrashantVIT1"><i class="fa-brands fa-github"></i></a>
+                        <a href="https://www.linkedin.com/in/prashant-raj-8219b11aa/"><i
+                                class="fa-brands fa-linkedin"></i></a>
+                        <a href="https://leetcode.com/1Prashant_Raj/"><i class="fa-solid fa-laptop-code"></i></a>
+                    </div>
+                    <a href="cv/my-cv.pdf" download class="btn btn2">Download CV</a>
+                </div>
+                <div class="contact-right">
+                    <form name="submit-to-google-sheet">
+                        <input type="text" name="Name" placeholder="Your Name" required>
+                        <input type="email" name="Email" placeholder="Your Email" required>
+                        <textarea name="Message" rows="6" placeholder="Your Message"></textarea>
+                        <button type="submit" class="btn btn2">Submit</button>
+                    </form>
+                    <span id="msg"></span>
+                </div>
+            </div>
+        </div>
+        <div class="copyright">
+            <p>copyright © Prashant. Made with <i class="fa-solid fa-heart"></i></p>
+        </div>
+    </div>
+
+    <script>
+        var tablinks = document.getElementsByClassName("tab-links");
+        var tabcontents = document.getElementsByClassName("tab-contents");
+        function opentab(tabname) {
+            for (tablink of tablinks) {
+                tablink.classList.remove("active-link");
+
+            }
+            for (tabcontent of tabcontents) {
+                tabcontent.classList.remove("active-tab");
+            }
+            event.currentTarget.classList.add("active-link");
+            document.getElementById(tabname).classList.add("active-tab");
+        }
+
+    </script>
+    <script>
+        // ---------------------side manu-------------------
+        var sidemenu = document.getElementById("sidemenu");
+
+        function openmenu() {
+            sidemenu.style.right = "0";
+        }
+        function closemenu() {
+            sidemenu.style.right = "-200px";
+        }
+    </script>
+
+    <script>
+        //to send data to google sheet
+        const scriptURL = 'https://script.google.com/macros/s/AKfycbyphtP8T9qgr686pDKJuXY9FCU_bpOBMQfh1FSya4HnEI0tJvTt2gPuQEfYV_koU8dt/exec'
+        const form = document.forms['submit-to-google-sheet']
+
+        // |
+        // |to display success msg if msg send
+        const msg = document.getElementById("msg");
+        // |
+        // |
+
+        form.addEventListener('submit', e => {
+            e.preventDefault()
+            fetch(scriptURL, {method: 'POST', body: new FormData(form)})
+                .then(response => {
+                    msg.innerHTML = "Message sent successfully"
+                    setTimeout(function () {
+                        msg.innerHTML = ""
+                    }, 5000)
+                    form.reset()
+                })
+                .catch(error => console.error('Error!', error.message))
+        })
+    </script>
+    <script src="https://cdn.jsdelivr.net/npm/typed.js@2.0.12"></script>
+    <script>
+        var typed = new Typed(".auto-type", {
+            strings: [" am a Software Engineer at Visteon, India", " love coding...☺", " am a Data Science Enthusiast"],
+            typeSpeed: 150,
+            backSpeed: 150,
+            loop: true
+        })
+    </script>
+
+</body>
+
+</html>
